@@ -40,6 +40,37 @@ button {
   background-color: #dadada;
   font-size: 17px;
   color: grey;
+  margin: 5px;
+}
+.entrada:disabled {
+  border: 1px solid #cdccc7;
+  background-color: #dadada;
+  font-size: 14px;
+}
+.entrada:enabled {
+  border: 1px solid #28dc92;
+  background-color: #28dc92;
+  font-size: 14px;
+  color: white;
+}
+
+button:disabled {
+  border: 1px solid #cdccc7;
+  background-color: #dadada;
+}
+.pagamento:enabled {
+  border: 1px solid #a769b2;
+  background-color: #a769b2;
+  color: white;
+}
+.saida:enabled {
+  border: 1px solid #a769b2;
+  background-color: white;
+  color: #a769b2;
+}
+.historico {
+  margin-top: 10px;
+  font-size: 15px;
 }
 .topo {
   width: 100vw;
@@ -74,4 +105,34 @@ a {
   justify-content: center;
   align-items: center;
   background-color: transparent;
+}
+h2 {
+  color: turquoise;
+}
+.outrobutton {
+  background-color: #a769b2;
+  color: white;
+}
+.confirmar {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.loading {
+  margin-top: 50px;
+  animation: is-rotating 1s infinite;
+  width: 50px;
+  height: 50px;
+  border: 6px solid grey;
+  border-top-color: blue;
+  border-radius: 50%;
+
+}
+@keyframes is-rotating {
+  to {
+    transform: rotate(1turn);
+  }
 }
